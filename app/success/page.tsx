@@ -3,7 +3,7 @@ import Link from "next/link";
 import { redirect } from "next/navigation";
 
 const stripe = new Stripe(process.env.STRIPE_SECRET_KEY!, {
-  apiVersion: "2024-04-10",
+  apiVersion: "2026-04-22.dahlia", 
 });
 
 // Notice the Promise type here - required for Next.js 15/16
