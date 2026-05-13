@@ -15,13 +15,13 @@ export default async function DashboardPage({
     <main className="flex min-h-screen flex-col items-center justify-center bg-slate-950 p-6 text-white">
       <div className="w-full max-w-4xl rounded-3xl border border-slate-800 bg-slate-900/50 p-10 shadow-2xl backdrop-blur-md">
         
-        <header className="mb-10 flex items-center justify-between border-b border-slate-800 pb-6">
-          <h1 className="text-3xl font-bold">FollowPack Pro Dashboard</h1>
+<header className="mb-8 flex flex-col items-start gap-4 border-b border-slate-800 pb-6 md:mb-10 md:flex-row md:items-center md:justify-between">
+          <h1 className="text-2xl font-bold md:text-3xl">FollowPack Pro Dashboard</h1>
           
           {/* Automatically showing the email passed from Stripe */}
-          <div className="flex items-center gap-3 rounded-full bg-slate-800 px-4 py-2 text-sm text-slate-300">
-            <div className="h-2 w-2 rounded-full bg-green-500"></div>
-            {userEmail}
+          <div className="flex w-full max-w-full items-center gap-3 rounded-full bg-slate-800 px-4 py-2 text-sm text-slate-300 md:w-auto">
+            <div className="h-2 w-2 shrink-0 rounded-full bg-green-500"></div>
+            <span className="truncate">{userEmail}</span>
           </div>
         </header>
 
